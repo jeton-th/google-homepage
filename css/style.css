@@ -1,0 +1,86 @@
+body, div, nav, footer{
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+    color: #222;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    text-align: right;
+    min-width: 226px;
+    padding: 15px 30px;
+}
+nav a{
+    font-size: 13px;
+    margin-left: 15px;
+    color: rgba(0,0,0,0.87);
+}
+
+.button{
+    padding: 0 12px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 28px;
+    outline: none;
+    color: #fff;
+    border: 1px solid #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    border-radius: 2px;
+    cursor: default;
+}
+
+.button:hover{
+    text-decoration: none;
+}
+
+.icon {
+    display: inline-block;
+    background: url(../img/appsicon.png) 50% 50% no-repeat;
+    vertical-align: middle;
+    opacity: 0.55;
+    height: 16px;
+    width: 16px;
+}
+
+#main {
+    margin: 0 auto;
+    min-width: 980;
+    margin-top: 140px;
+    margin-bottom: 35px;
+}
+
+#search-bar {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    background: #fff;
+    border-radius: 2px;
+    border: none;
+    width: 584px;
+}
+
+#search {
+    padding: 5px;
+    height: 34px;
+    width: 550px;
+    line-height: 34px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+}
+
+#voice-icon {
+    width: 34px;
+    height: 34px;
+    background: url(../img/voiceicon.png) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
