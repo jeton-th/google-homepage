@@ -2,6 +2,7 @@ body, div, nav, footer{
     margin: 0;
     padding: 0;
     font-family: arial,sans-serif;
+    font-size: 13px;
     color: #222;
 }
 
@@ -13,24 +14,23 @@ a:hover{
     text-decoration: underline;
 }
 
-nav{
+#top-nav{
     text-align: right;
     min-width: 226px;
     padding: 15px 30px;
 }
-nav a{
-    font-size: 13px;
+#top-nav a{
     margin-left: 15px;
     color: rgba(0,0,0,0.87);
 }
 
-.button{
+#top-nav .button{
     padding: 0 12px;
     display: inline-block;
     font-weight: bold;
     line-height: 28px;
     outline: none;
-    color: #fff;
+    color: rgba(256, 256, 256, 1);
     border: 1px solid #4285f4;
     background: -webkit-linear-gradient(top,#4387fd,#4683ea);
     border-radius: 2px;
@@ -58,24 +58,33 @@ nav a{
 }
 
 #search-bar {
-    flex: 1;
     display: flex;
-    padding: 5px 8px 0 16px;
-    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
     background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     border-radius: 2px;
     border: none;
-    width: 584px;
+    margin: 20px auto;
+    padding: 6px 16px 0 16px;
+    width: 520px;
+    height: 40px;
+}
+
+#search-bar:hover {
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
 #search {
-    padding: 5px;
-    height: 34px;
-    width: 550px;
-    line-height: 34px;
-    font-size: 16px;
-    background: transparent;
+    background-color: transparent;
     border: none;
+    margin: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    font-size: 16px;
+    line-height: 34px;
+    height: 34px;
 }
 
 #voice-icon {
@@ -83,4 +92,68 @@ nav a{
     height: 34px;
     background: url(../img/voiceicon.png) 50% 50% no-repeat;
     background-size: 24px 24px;
+    cursor: pointer;
+}
+
+#main input[type="submit"]{
+    height: 36px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    line-height: 27px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: pointer;
+}
+
+#main input[type="submit"]:hover{
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+}
+
+footer a {
+    color: #5f6368;
+}
+
+#country{
+    color: #5f6368;
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+#links{
+    padding: 0 30px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.left{
+    float: left;
+}
+
+.left a {
+    margin-right: 25px;
+}
+
+.right {
+    float: right;
+}
+
+.right a {
+    margin-left: 25px;
 }
