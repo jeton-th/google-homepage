@@ -2,3 +2,5 @@
 
 This is an exercise for HTML/CSS from the Odin Project.<br>
 It's an imitation of Google's homepage.
+<br><br>
+https://jeton-th.github.io/google-homepage/
